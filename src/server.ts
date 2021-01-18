@@ -1,18 +1,8 @@
 /* eslint-disable no-console */
-import * as express from 'express';
-import * as bodyParser from 'body-parser';
-import * as cors from 'cors';
+import app from './app';
+import 'dotenv/config';
 
-import routes from './routes';
-
-const app = express();
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors());
-app.use(routes);
-
-const server = app.listen(3000, () => {
+const server = app.listen(process.env.APP_PORT || 3000, () => {
   console.log('🏃 Running Server');
 });
 
