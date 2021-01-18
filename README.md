@@ -8,9 +8,7 @@ PS: Subir o container presente no arquivo docker-compose antes de executar a API
 
 ## Execução API
 
-    Executar o comando
-
-    `yarn dev` ou `npm run dev`
+    Executar o comando **yarn dev** ou **npm run dev**
 
 ## Métodos
 
